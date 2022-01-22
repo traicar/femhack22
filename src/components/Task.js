@@ -1,5 +1,6 @@
 import { FaEdit, FaTimes } from 'react-icons/fa'
 
+
 const Task = ({ task, onDelete, onEdit, onToggle }) => {
   return (
     <div className='task' onDoubleClick={() => onToggle(task.id)}>
@@ -10,7 +11,7 @@ const Task = ({ task, onDelete, onEdit, onToggle }) => {
           onClick={() => onDelete(task.id)} />
         <FaEdit
           style={{ color: 'black', cursor: 'pencil' }}
-          onClick={() => onDelete(task.id)} />
+          onClick={() => onEdit(true)} />
       </h3>
       <p>{task.description}</p>
     </div>
