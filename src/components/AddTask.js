@@ -31,7 +31,7 @@ export const AddTask = ({ onAdd }) => {
       <div className='form-control'>
         <label>Description</label>
         <input type='textarea'
-          placeholder='Describe the task'
+          placeholder='Add Description'
           value={description}
           onChange={(e) => setDescription(e.target.value)} />
       </div>

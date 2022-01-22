@@ -7,13 +7,14 @@ const Header = ({ title, onAdd }) => {
   return (
     <header className='header'>
       <h1>{title}</h1>
-      <Button color='orange' onClick={onAdd} text='Add' />
+      <Button color='green' onClick={onAdd} text='Add' />
     </header>
   )
 }
 
 Header.defaultProps = {
   title: 'Note Taker',
+
 }
 
 Header.propTypes = {
